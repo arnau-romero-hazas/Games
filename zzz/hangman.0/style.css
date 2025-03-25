@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente chula */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Fondo con gradiente azul */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la intro */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separación entre elementos */
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+input, button {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    text-align: center;
+}
+
+button {
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e07b00;
+}
+
+/* Estilos para la vista del juego */
+.game-container {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    gap: 20px;
+    width: 100%;
+}
+.image-word{
+    display: flex;
+    align-items: left;
+
+}
+.attempt-section {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+/* Contenedor principal de la imagen y palabra oculta */
+.hangman-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Imagen del ahorcado */
+.hangman-image {
+    width: 200px;
+    height: auto;
+}
+
+/* Palabra oculta */
+.word-status {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+
+/* Formulario y contadores */
+.game-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Intentos restantes */
+.remaining-attempts {
+    font-size: 20px;
+    font-weight: bold;
+}
