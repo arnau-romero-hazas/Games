@@ -1,7 +1,8 @@
 export default function HangmanImage({ attemptsLeft }) {
-    return (
+  console.log("ATTEMPTS LEFT en HangmanImage:", attemptsLeft);
+  return (
       <img
-        src={`/../../public/hangman-${6 - attemptsLeft}.jpg`}
+        src={`/hangman-${6 - attemptsLeft}.jpg`}
         alt={`Hangman stage ${6 - attemptsLeft}`}
         className="hangman-image"
       />

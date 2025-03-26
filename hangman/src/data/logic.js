@@ -43,8 +43,9 @@ const logic = {
 
   getStatus() {
     const data = getData();
+    console.log("getStatus() DATA:", data);
     return {
-      status: data.word.split("").map((char, i) => (data.progress[i] ? char : "-")).join(""),
+      status: data.word.split("").map((char, i) => (data.progress[i] ? char.toUpperCase() : "  -  ")).join(""),
       remainingAttempts: data.remainingAttempts
     };
   },

@@ -1,6 +1,6 @@
 const STORAGE_KEY = "hangmanGame"; // Clave única para guardar los datos en Local Storage
 
-const defaultData = {
+ const defaultData = {
   word: "",
   progress: [],
   remainingAttempts: 6

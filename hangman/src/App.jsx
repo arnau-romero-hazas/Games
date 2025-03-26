@@ -23,7 +23,7 @@ function App() {
     setView("intro");
   };
 
-  return <>{view === "intro" ? <Intro onStart={startGame} /> : <Game status={status} onRestart={restartGame} />}</>;
+  return <>{view === "intro" ? <Intro onStart={startGame} /> : <Game status={status} attemptsLeft={status.remainingAttemps} onRestart={restartGame} />}</>;
 }
 
 export default App;
